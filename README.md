@@ -1,2 +1,3 @@
-# CoffeMarket
+# CoffeeMarket
 Course project in college
+
