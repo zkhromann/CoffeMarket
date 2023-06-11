@@ -1,0 +1,131 @@
+//
+//  ViewModel.swift
+//  Coffeee
+//
+//  Created by Роман Захаров on 15.02.2023.
+//
+
+import Foundation
+class CatalogViewModel: ObservableObject{
+    
+    static let shared = CatalogViewModel()
+    var CoffeeProducts = [
+        Product (id: "1",
+                title: "Латте",
+                image: "latte",
+                price: 230,
+                descript: "Напиток на основе эспрессо и молока с небольшим количеством молочной пены"),
+        Product (id: "2",
+                title: "Американо",
+                image: "amerikano",
+                price: 170,
+                descript: "Черный кофе на основе эспрессо"),
+        Product (id: "3",
+                title: "Мокка",
+                image: "mokko",
+                price: 210,
+                descript: "Напиток на основе эспрессо и молока с добавлением взбитых сливок и шоколадного соуса"),
+        Product (id: "4",
+                title: "Капучино",
+                image: "kapuchino",
+                price: 80,
+                descript: "Напиток на основе эспрессо и молока с небольшим количеством молочной пены"),
+        Product (id: "5",
+                title: "Раф",
+                image: "raf",
+                price: 180,
+                descript: "Напиток на основе эспрессо с добавлением сливок и ванильного сиропа"),
+        Product (id: "6",
+                title: "Флет Уайт",
+                image: "FletUait",
+                price: 205,
+                descript: "Напиток на основе эспрессо и молока с более насыщенным кофейным вкусом,чем в Латте"),]
+    
+    
+    
+    var ChaiProducts = [
+        Product (id: "9",
+                title: "Чай Зеленый с Жасмином",
+                image: "chaj-zelenyj-s-zhasminom-04-l",
+                price: 170,
+                descript: "Ароматный чай с насыщенным вкусом."),
+        Product (id: "10",
+                title: "Чай Черный Эрл Грей",
+                image: "chaj-chernyj-jerl-grej-04-l",
+                price: 210,
+                descript: "Ароматный чай с насыщенным вкусом."),
+        Product (id: "11",
+                title: "Чай Хуго Коктейль",
+                image: "chaj-hugo-koktejl-04-l",
+                price: 80,
+                descript: "Ароматный чай с насыщенным вкусом."),
+        Product (id: "12",
+                title: "Чай Кенийский",
+                image: "chaj-kenijskij-04-l",
+                price: 180,
+                descript: "Ароматный чай с насыщенным вкусом."),]
+    var PopProducts = [
+        Product (id: "25",
+                 title: "Торт Миндальный",
+                 image: "tort-mindalnyj",
+                 price: 220,
+                 descript: "Миндальные коржи в сочетании с нежным заварным кремом. Каждый кусок торта декорирован золотистыми миндальными лепестками."),
+        Product (id: "1",
+                title: "Латте",
+                image: "latte",
+                price: 230,
+                descript: "Напиток на основе эспрессо и молока с небольшим количеством молочной пены"),
+        Product (id: "6",
+                title: "Флет Уайт",
+                image: "FletUait",
+                price: 205,
+                descript: "Напиток на основе эспрессо и молока с более насыщенным кофейным вкусом,чем в Латте"),
+        Product (id: "31",
+                title: "Рокслайд",
+                image: "rokslajd",
+                price: 220,
+                descript: "Шоколадный брауни, пропитанный густой карамелью и украшенный орехами пекан"),]
+    
+    var DesertProducts = [
+        Product (id: "25",
+                title: "Торт Миндальный",
+                image: "tort-mindalnyj",
+                price: 220,
+                descript: "Миндальные коржи в сочетании с нежным заварным кремом. Каждый кусок торта декорирован золотистыми миндальными лепестками."),
+        Product (id: "26",
+                title: "Тирамису",
+                image: "tiramisu",
+                price: 220,
+                descript: "Классический десерт с мягким кофейным бисквитом, нежным муссом со вкусом сыра маскарпоне и ароматным какао"),
+        Product (id: "27",
+                title: "Пирожное Черный лес",
+                image: "pirozhnoe-chernyj-les",
+                price: 220,
+                descript: "Шоколадный бисквит, прослойка из вишни и воздушных сливок, сверху пирожное покрыто тонким слоем бельгийского шоколада."),
+        Product (id: "28",
+                title: "Торт Шоколадный",
+                image: "tort-shokoladnyj",
+                price: 220,
+                descript: "Шоколадный бисквит, наполненный шоколадным кремом."),
+        Product (id: "29",
+                title: "Малиновая тарталетка",
+                image: "malinovaja-tartaletka",
+                price: 220,
+                descript: "Корзиночка из песочного теста со взбитым нежным кремом и спелой свежей малиной"),
+        Product (id: "30",
+                title: "Чизкейк Карамельный",
+                image: "chizkejk-karamelnyj",
+                price: 220,
+                descript: "Классический нежный десерт из сливочного сыра с карамельной прослойкой"),
+        Product (id: "31",
+                title: "Рокслайд",
+                image: "rokslajd",
+                price: 220,
+                descript: "Шоколадный брауни, пропитанный густой карамелью и украшенный орехами пекан"),
+        Product (id: "32",
+                title: "Клубничный чизкейк",
+                image: "klubnichnyj-chizkejk",
+                price: 220,
+                descript: "Мягкий сливочный сыр на песочной основе, сверху украшен клубникой в желе"),]
+    
+}
